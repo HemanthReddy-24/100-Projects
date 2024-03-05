@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #607d8b;
+    text-decoration: underline 4px solid #ff4584;
+}
+
+.container .main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.container .main .input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.container .main .input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+    margin: 10px 0;
+}
+
+.container .main .input-box label{
+    width: 95%;
+    color: #607d8b;
+    font-size: 16px;
+    font-weight: 500;
+    margin:5px 0;
+    padding-left: 10px;
+}
+
+.container .main .input-box input{
+    width: 95%;
+    height: 35px;
+    border: 2px solid #ff4584;
+    border-radius: 15px;
+    outline: none;
+    background: transparent;
+    color: #607d8b;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.container .basic-details{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0;
+    
+}
+
+.container .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #607d8b;
+    text-decoration: underline 4px solid #ff4584;
+}
+
+.container .date-of-birth .dob-title{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #607d8b;
+    text-decoration: underline 4px solid #ff4584;
+    display: block;
+}
+
+.container .date-of-birth #dob{
+    width: 95%;
+    height: 30px;
+    outline: none;
+    background: transparent;
+    border: 2px solid #ff4584;
+    border-radius: 15px;
+    color: #607d8b;
+    font-size: 16px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+
+.container .gender-details .gender{
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #607d8b;
+}
+
+.container .gender-details .gender label{
+    padding: 0 5px ;
+}
+
+.container .gender-details .gender label,
+.container .gender-details .gender input,
+.container .submit-btn input{
+    cursor: pointer;
+}
+
+.container .submit-btn input{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: 2px solid #ff4584;
+    border-radius: 15px;
+    color: #ff4584;
+    font-size: 20px;
+    font-weight: 1000;
+    background:transparent;
+}
+
+.container .submit-btn input:hover{
+    background: #ff4584;
+    color: #fff;
+}
+
+@media(max-width:600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .input-box{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main::-webkit-scrollbar{
+        width: 0px;
+    }
+}
