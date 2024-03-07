@@ -9,30 +9,131 @@ body{
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: url(./peace.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .container{
-    width: 60vw;
+    position: relative;
+    width: 80vw;
     height: 80vh;
-    margin: auto;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
     border-radius: 30px;
-}
-
-.container h1{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    color: #607d8b;
-    text-decoration: underline 4px solid #ff4584;
-    margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container .left-container{
+    position: relative;
     width: 50%;
     height: 100%;
     float: left;
+    padding: 10px;
+    padding-right: 20px;
+    border-right: 5px solid #ff4584;
+}
+.container .right-container{
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+
+.container .left-container h2,
+.container .right-container h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #607d8b;
+    text-decoration: underline 4px solid #ff4584;
+}
+
+.container .left-container .main{
+    width: 100%;
+    padding: 15px 0;
+}
+
+.container .left-container .main .details{
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.container .left-container .main .details h3{
+    font-size: 20px;
+    font-weight: 800;
+    color: #ff4584;
+    text-decoration: underline 2px solid #607d8b;
+}
+.container .left-container .main .details p{
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.container .right-container form{
+    width: 100%;
+    padding: 20px;
+}
+
+.container .right-container form .input-box{
+    width: 100%;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+.container .right-container form .input-box input{
+    width: 95%;
+    height: 35px;
+    border: 2px solid #ff4584;
+    border-radius: 15px;
+    outline: none;
+    background: transparent;
+    color: #607d8b;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.container .right-container form .input-box textarea{
+    min-width: 95%;
+    max-width: 100%;
+    min-height: 250px;
+    border: 2px solid #ff4584;
+    border-radius: 15px;
+    outline: none;
+    background: transparent;
+    color: #607d8b;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+
+.container .right-container form .input-box input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #ff4584;
+    color: #fff;
+    font-weight: 1000;
+}
+
+@media(max-width: 800px){
+    body{
+        background: none;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+    }
+
+    .container .left-container,
+    .container .right-container{
+        width: 100%;
+        border: 0;
+    }
 }

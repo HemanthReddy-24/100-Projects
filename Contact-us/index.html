@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feed Back Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <h1>Contact Us</h1>
-        <div class="left-container"></div>
-        <div class="right-container"></div>
+        <div class="left-container">
+            <h2>Contact Us</h2>
+            <div class="main">
+                <div class="details">
+                    <img width="50" height="50" src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/external-telephone-contact-us-flatart-icons-lineal-color-flatarticons-2.png" alt="external-telephone-contact-us-flatart-icons-lineal-color-flatarticons-2"/>
+                    <h3>Phone</h3>
+                    <p>1234567890</p>
+                    <p>1234567890</p>
+                </div>
+                <div class="details">
+                    <img width="50" height="50" src="https://img.icons8.com/nolan/64/email.png" alt="email"/>
+                    <h3>Email</h3>
+                    <p>5Tq5d@example.com</p>
+                    <p>5Tq5d@example.com</p>
+                </div>
+                <div class="details">
+                    <img width="50" height="50" src="https://img.icons8.com/glyph-neue/64/address.png" alt="address"/>
+                    <h3>Address</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, asperiores facilis adipisci reiciendis, cumque dicta optio, minus distinctio fuga itaque illum? Iusto ab ipsam deleniti.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <h2>Write Us</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" required placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" required placeholder="Enter your email">
+                </div>
+                <div class="input-box">
+                    <textarea name="message" id="message" cols="30" rows="10" required placeholder="Enter your message"></textarea>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
     </div>
 </body>
+
 </html>
